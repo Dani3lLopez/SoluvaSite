@@ -15,7 +15,7 @@
 | Ancho máximo | 1240 px | Alineación de contenido |
 | Espaciado | 4 / 8 / 16 / 24 / 32 / 48 / 72 / 96 px | Ritmo |
 
-Titular principal fluido entre 42 y 76 px. Secciones 36–54 px. Texto base 16–18 px. Controles de 44 px como mínimo. Movimiento breve sólo para hover y apertura del menú; respetar movimiento reducido.
+Titular principal fluido entre 42 y 76 px. Secciones 36–54 px. Texto base 16–18 px. Controles de 44 px como mínimo. Movimiento: estados de controles de 120–160 ms, paneles de 280 ms, entradas de secciones de 400 ms y titular por palabras de hasta 550 ms más un desfase breve. Curva principal cubic-bezier(.16, 1, .3, 1). Entradas únicas, sin bucles y sin bloquear interacción; respetar movimiento reducido. Detalles en MOVIMIENTO.md.
 
 La guía adapta las referencias al brief de SOLUVA. Los colores originales de referencias secundarias no se importan a otras funciones. Una imagen ilustrativa ocupa el hero; los proyectos reales requieren material autorizado.
 

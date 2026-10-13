@@ -11,4 +11,6 @@ La identidad proviene del logo existente: blanco, negro y rojo. La página debe 
 - La imagen del hero es ilustrativa, generada para esta página; nunca presentarla como un proyecto real de SOLUVA.
 - Mantener información empresarial en company.ts y reservar las notas internas para docs/.
 - Evitar glassmorphism, gradientes llamativos, tarjetas repetitivas, cifras inventadas, reseñas falsas y animaciones que dificulten la lectura.
+- Movimiento autorizado: titular por palabras de UIArc, entradas únicas al recorrer secciones y respuesta breve de botones, enlaces, menú y servicios. Tomar Design Spells como referencia de respuesta al usuario. La fila tecnológica admite un bucle lento solicitado por el usuario, con pausa; las demás animaciones son únicas. Sin parallax ni cambios de paleta; desactivar movimiento al solicitarlo el dispositivo.
+- Clientes: retícula de once empresas autorizadas, con logos reales y nombres. Handhold aporta presentación discreta de logos; Dub Customers aporta jerarquía. Mantener la dirección de NEVERHACK y separar la experiencia con clientes de las marcas de equipos.
 

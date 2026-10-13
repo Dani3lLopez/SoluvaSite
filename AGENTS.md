@@ -18,6 +18,8 @@
 
 ## Desarrollo y revisión
 - Astro + TypeScript, salida estática. Contenido empresarial centralizado en web/src/data/company.ts.
+- React se integra para TextReveal de UIArc, renderizado sin hidratación. Conservar atribución y licencia en web/src/components/arc/. Las microinteracciones están documentadas en docs/MOVIMIENTO.md; el contenido nunca depende de su ejecución para ser visible.
+- El usuario autorizó los once clientes de company.ts y confirmó Óptima financiera y ALPHA Construyendo historias. Los 22 logos PNG y sus fuentes se documentan en docs/LOGOS.md. No reinterpretar la fila tecnológica como una certificación o alianza. LogoMarquee conserva pausa, movimiento reducido, desplazamiento sin scripts y clon decorativo inaccesible al foco.
 - Ejecutar en web/: npm run check, npm run build y npm test. npm test requiere la compilación anterior.
 - Revisar en navegador a 1440, 768, 390 y 320 px: desbordamientos, menú, enlaces, imágenes y foco de teclado.
 - Respetar prefers-reduced-motion y navegación sin JavaScript. Mantener contraste, nombres accesibles y controles de al menos 44 px.

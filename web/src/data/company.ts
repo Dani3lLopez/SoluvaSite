@@ -37,7 +37,33 @@ export const services = [
 ];
 
 export const sectors = ['Comercial', 'Corporativo', 'Residencial', 'Industrial', 'Institucional'];
-export const brands = ['Hikvision', 'Honeywell', 'Fire-Lite', 'Silent Knight', 'Bosch', 'Edwards', 'Dahua', 'Axis', 'Panduit', 'Ubiquiti', 'Grandstream'];
+export interface BrandLogo { name: string; logo: string; width: number; height: number; light?: boolean; framed?: boolean; }
+export const brands: BrandLogo[] = [
+  { name: 'Hikvision', logo: '/logos/tecnologia/hikvision.png', width: 640, height: 86 },
+  { name: 'Honeywell', logo: '/logos/tecnologia/honeywell.png', width: 640, height: 140 },
+  { name: 'Fire-Lite', logo: '/logos/tecnologia/fire-lite.png', width: 480, height: 320, framed: true },
+  { name: 'Silent Knight', logo: '/logos/tecnologia/silent-knight.png', width: 640, height: 249 },
+  { name: 'Bosch', logo: '/logos/tecnologia/bosch.png', width: 640, height: 143 },
+  { name: 'Edwards', logo: '/logos/tecnologia/edwards.png', width: 320, height: 320, framed: true },
+  { name: 'Dahua', logo: '/logos/tecnologia/dahua.png', width: 640, height: 192 },
+  { name: 'Axis', logo: '/logos/tecnologia/axis.png', width: 130, height: 47 },
+  { name: 'Panduit', logo: '/logos/tecnologia/panduit.png', width: 640, height: 144 },
+  { name: 'Ubiquiti', logo: '/logos/tecnologia/ubiquiti.png', width: 318, height: 320 },
+  { name: 'Grandstream', logo: '/logos/tecnologia/grandstream.png', width: 300, height: 43 },
+];
+export const clients: BrandLogo[] = [
+  { name: 'Digicel', logo: '/logos/clientes/digicel.png', width: 640, height: 147 },
+  { name: 'Super Selectos', logo: '/logos/clientes/super-selectos.png', width: 640, height: 163 },
+  { name: 'Grupo Q', logo: '/logos/clientes/grupo-q.png', width: 320, height: 106 },
+  { name: 'Óptima', logo: '/logos/clientes/optima.png', width: 513, height: 192, light: true },
+  { name: 'Acofinges de R.L.', logo: '/logos/clientes/acofinges.png', width: 245, height: 50 },
+  { name: 'Alpha Constructores', logo: '/logos/clientes/alpha.png', width: 412, height: 90 },
+  { name: 'COBE', logo: '/logos/clientes/cobe.png', width: 120, height: 43 },
+  { name: 'Briko', logo: '/logos/clientes/briko.png', width: 640, height: 168 },
+  { name: 'Ternova', logo: '/logos/clientes/ternova.png', width: 640, height: 138, light: true },
+  { name: 'Global Parts', logo: '/logos/clientes/global-parts.png', width: 640, height: 149 },
+  { name: 'Constructora El Salvador', logo: '/logos/clientes/constructora-el-salvador.png', width: 183, height: 146 },
+];
 export const process = [
   { name: 'Entendemos su proyecto', description: 'Levantamos sus necesidades y definimos el alcance de la solución.' },
   { name: 'Diseñamos la propuesta', description: 'Seleccionamos equipos y sistemas según los requerimientos técnicos.' },

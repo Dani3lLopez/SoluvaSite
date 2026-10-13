@@ -1,0 +1,54 @@
+:root { --motion-fast: 160ms; --motion-panel: 280ms; --motion-ease: cubic-bezier(.16, 1, .3, 1); }
+
+.button { transition: background var(--motion-fast) ease, border-color var(--motion-fast) ease, transform 120ms var(--motion-ease); transform-origin: center; }
+.button svg, .text-link svg, .contact-details a svg { transition: transform var(--motion-fast) var(--motion-ease); }
+.site-nav > a:not(.button) { position: relative; }
+.site-nav > a:not(.button)::after { content: ''; position: absolute; inset: auto 0 6px; height: 1px; background: var(--red); transform: scaleX(0); transform-origin: left; transition: transform var(--motion-fast) var(--motion-ease); }
+.site-nav > a:not(.button):is(:hover, :focus-visible) { text-decoration: none; }
+.site-nav > a:not(.button):is(:hover, :focus-visible)::after { transform: scaleX(1); }
+.service-icon { transition: color var(--motion-fast) ease, background var(--motion-fast) ease; }
+.service h3, .service-icon svg { transition: transform var(--motion-fast) var(--motion-ease); }
+.service:is([open], :focus-within) .service-icon { color: var(--red); }
+.service[open] .service-number { color: var(--red); }
+.service-plus::after, .purpose summary > span { transition: transform var(--motion-fast) var(--motion-ease); }
+.menu-toggle { position: relative; }
+.menu-icon { display: block; position: relative; width: 22px; height: 20px; margin: auto; }
+.menu-icon > span { position: absolute; inset: 3px 0 auto; height: 1.5px; background: currentColor; transition: transform var(--motion-fast) var(--motion-ease), opacity var(--motion-fast) ease; }
+.menu-icon > span:nth-child(2) { top: 9px; }
+.menu-icon > span:nth-child(3) { top: 15px; }
+.menu-toggle[aria-expanded='true'] .menu-icon > span:first-child { transform: translateY(6px) rotate(45deg); }
+.menu-toggle[aria-expanded='true'] .menu-icon > span:nth-child(2) { opacity: 0; }
+.menu-toggle[aria-expanded='true'] .menu-icon > span:last-child { transform: translateY(-6px) rotate(-45deg); }
+
+@media (prefers-reduced-motion: no-preference) {
+  .hero-description { animation: solu-enter 400ms var(--motion-ease) 100ms backwards; }
+  .hero-actions { animation: solu-enter 400ms var(--motion-ease) 170ms backwards; }
+  .hero-footnote { animation: solu-enter 400ms var(--motion-ease) 220ms backwards; }
+  .hero-visual { animation: solu-enter 480ms var(--motion-ease) 100ms backwards; }
+  .button:active { transform: scale(.98); }
+  .button:focus-visible svg:last-child, .text-link:focus-visible svg, .contact-details a:focus-visible svg { transform: translateX(3px); }
+  @media (hover: hover) and (pointer: fine) {
+    .button:hover svg:last-child, .text-link:hover svg, .contact-details a:hover svg { transform: translateX(3px); }
+    .service summary:hover h3 { transform: translateX(4px); }
+    .service summary:hover .service-icon { color: var(--red); }
+    .service summary:hover .service-icon svg { transform: rotate(-5deg); }
+  }
+  @media (max-width: 900px) {
+    .site-nav[data-open='true'] { animation: solu-enter 200ms var(--motion-ease); transform-origin: top; }
+  }
+}
+
+@supports selector(details::details-content) {
+  .service::details-content, .purpose::details-content { opacity: 0; transition: opacity var(--motion-panel) ease, content-visibility var(--motion-panel) allow-discrete; }
+  .service[open]::details-content, .purpose[open]::details-content { opacity: 1; }
+  @supports (interpolate-size: allow-keywords) {
+    .service, .purpose { interpolate-size: allow-keywords; }
+    .service::details-content, .purpose::details-content { block-size: 0; overflow: clip; transition: block-size var(--motion-panel) var(--motion-ease), opacity var(--motion-panel) ease, content-visibility var(--motion-panel) allow-discrete; }
+    .service[open]::details-content, .purpose[open]::details-content { block-size: auto; }
+  }
+}
+
+@keyframes solu-enter { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after, details::details-content { animation: none !important; transition: none !important; }
+}

@@ -109,8 +109,6 @@ summary::-webkit-details-marker { display: none; }
 .brands-heading .eyebrow { justify-content: center; margin-bottom: 16px; }
 .brands h2 { font-size: 33px; }
 .brands-heading > p:last-child { margin-top: 16px; color: var(--muted); font-size: 14px; }
-.brand-list { margin-top: 38px; display: flex; flex-wrap: wrap; justify-content: center; column-gap: 38px; row-gap: 20px; padding-block: 28px; border-block: 1px solid var(--line); }
-.brand-list li { font-size: 17px; font-weight: 600; letter-spacing: -.02em; }
 .contact { background: var(--surface); border-top: 1px solid var(--line); }
 .contact-grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: 84px; }
 .contact-lead { max-width: 430px; color: var(--muted); margin-top: 24px; font-size: 16px; }
@@ -217,8 +215,6 @@ summary::-webkit-details-marker { display: none; }
   .process-list h3 { font-size: 17px; margin-top: 18px; }
   .process-list p { font-size: 12px; }
   .brands h2 { font-size: 30px; }
-  .brand-list { column-gap: 24px; row-gap: 18px; }
-  .brand-list li { font-size: 15px; }
   .contact .button { width: 100%; gap: 12px; padding-inline: 14px; font-size: 13px; }
   .contact-details dd { margin-left: 0; overflow-wrap: anywhere; }
   .contact-details a { min-height: 44px; gap: 16px; }

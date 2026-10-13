@@ -30,3 +30,15 @@ Se añadieron metadatos completos, datos estructurados, control de indexación, 
 
 El 13 de octubre de 2026 se repitieron npm run check (13 archivos, sin errores ni advertencias), npm run build (página principal, robots.txt y sitemap.xml) y npm test (7 pruebas aprobadas) antes de subir el proyecto al repositorio autorizado Dani3lLopez/SoluvaSite. No se repitió la revisión visual en esta etapa. Se conserva la configuración sin dominio y con noindex; la subida del código a GitHub no publica el sitio web.
 
+## Microinteracciones y React
+
+El 13 de octubre se incorporó Text Reveal de UIArc y movimiento progresivo. npm run check: 17 archivos sin errores, advertencias ni sugerencias. Compilación estática correcta. npm test: 12 pruebas aprobadas; incluyen lógica de entradas, cancelación por movimiento reducido, foco, texto React accesible y SEO. npm install: 276 paquetes auditados, sin vulnerabilidades reportadas en ese momento. La página local responde HTTP 200 y contiene el nuevo titular y el icono del menú. El navegador no se utilizó para una nueva revisión visual por el rechazo anterior de su política de seguridad; no se eludió el bloqueo. Detalles y límites en MOVIMIENTO.md. Estos ajustes permanecen locales.
+
+## Clientes y logos
+
+El 13 de octubre se añadieron once clientes autorizados y once marcas de equipos, con 22 PNG locales. Se revisaron visualmente los archivos y se conservan sus fuentes. npm run check: 20 archivos, sin errores ni advertencias. Compilación estática correcta y 16 pruebas aprobadas, incluyendo datos de clientes, firmas PNG y dimensiones reservadas, pausa/reanudación, cambios de movimiento reducido y clon decorativo sin elementos enfocables. La revisión visual automatizada del conjunto a 1440, 768, 390 y 320 px permanece pendiente por el bloqueo anterior de la política del navegador; no se intentó otra vía de automatización. No se subió esta actualización ni se desplegó el sitio.
+
+## Preparación de las actualizaciones para GitHub
+
+El 13 de octubre de 2026, tras la autorización del usuario para subir los cambios, se repitieron npm run check (20 archivos, sin errores, advertencias ni sugerencias), npm run build y npm test (16 pruebas aprobadas). Se confirmó el repositorio Dani3lLopez/SoluvaSite y la rama main, sin cambios remotos pendientes de integrar antes del commit. Se incluyen microinteracciones, el componente React, clientes, 22 logos PNG, fuentes y documentación. La revisión visual del conjunto continúa pendiente por el bloqueo anterior del navegador. La subida a GitHub no despliega el sitio; el dominio sigue por definir y se conserva noindex.
+

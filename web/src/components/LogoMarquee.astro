@@ -1,0 +1,28 @@
+---
+import type { BrandLogo } from '../data/company';
+interface Props { items: BrandLogo[]; }
+const { items } = Astro.props;
+---
+<div class="logo-marquee" data-logo-marquee data-paused="false">
+  <div class="logo-toolbar">
+    <button class="logo-toggle" type="button" aria-label="Pausar movimiento de las marcas" aria-controls="brand-viewport" hidden>
+      <svg class="logo-pause-icon" width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M7 4v12M13 4v12" /></svg>
+      <svg class="logo-play-icon" width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="m6 4 10 6-10 6Z" /></svg>
+      <span data-logo-label>Pausar</span>
+    </button>
+  </div>
+  <div class="logo-viewport" id="brand-viewport" tabindex="0" role="region" aria-label="Marcas de equipos que integramos">
+    <div class="logo-track">
+      <ul class="logo-group">
+        {items.map((brand) => <li><img class:list={['logo-image', { 'logo-image--light': brand.light, 'logo-image--framed': brand.framed }]} src={brand.logo} width={brand.width} height={brand.height} alt={brand.name} loading="lazy" decoding="async" /><span aria-hidden="true">{brand.name}</span></li>)}
+      </ul>
+      <ul class="logo-group logo-group--clone" aria-hidden="true">
+        {items.map((brand) => <li><img class:list={['logo-image', { 'logo-image--light': brand.light, 'logo-image--framed': brand.framed }]} src={brand.logo} width={brand.width} height={brand.height} alt="" loading="lazy" decoding="async" /><span>{brand.name}</span></li>)}
+      </ul>
+    </div>
+  </div>
+</div>
+<script>
+  import { initLogoMarquees } from '../lib/logo-marquee.mjs';
+  initLogoMarquees();
+</script>

@@ -97,3 +97,12 @@ test('La configuración rechaza direcciones locales, inseguras o con rutas', () 
   }
 });
 
+test('El titular React conserva su texto accesible en el HTML sin hidratación', () => {
+  const heading = html.match(/<h1\b[^>]*id="hero-heading"[^>]*>([\s\S]*?)<\/h1>/)?.[1];
+  assert.ok(heading);
+  assert.ok(heading.includes('Seguridad electrónica. Tecnología que conecta.'));
+  assert.ok(heading.includes('aria-hidden="true"'));
+  assert.doesNotMatch(html, /<astro-island\b|client:only/);
+  assert.doesNotMatch(html, /<script\b[^>]*src="[^"]*client\.[^"]*\.js"/);
+});
+

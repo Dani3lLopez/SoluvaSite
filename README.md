@@ -42,3 +42,11 @@ Metadatos, datos estructurados LocalBusiness, robots.txt y sitemap.xml preparado
 ## Estado
 Página inicial local con servicios, empresa, experiencia y contacto directo. Sin formulario ni almacenamiento de datos. Revisar docs/PENDIENTES.md antes de publicación. El logo original se conserva y la imagen hero generada es ilustrativa.
 
+## Interacciones y React
+
+El titular usa Text Reveal, componente React gratuito de UIArc adaptado a SOLUVA y generado como HTML estático. Botones, enlaces, servicios y menú tienen respuestas breves; las secciones entran una sola vez al recorrer la página. El contenido sigue disponible sin JavaScript y el movimiento se desactiva con la preferencia del dispositivo. Referencias, licencia y límites de validación en docs/MOVIMIENTO.md.
+
+## Clientes y marcas
+
+La sección Clientes incorpora las once empresas solicitadas y sus logos. La fila de marcas tecnológicas utiliza once logos PNG y un movimiento continuo con pausa. Archivos locales en web/public/logos/; fuentes y límites de los originales en docs/LOGOS.md y docs/logos-fuentes.json. El usuario confirmó las identidades de Óptima y ALPHA durante esta revisión.
+

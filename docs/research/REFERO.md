@@ -22,7 +22,7 @@ El usuario pidió preparar una estructura básica con colores del logo. Se fija 
 | Lista técnica de servicios | Factory + DOCX | Retícula y contenido | Evita repetir tarjetas sin sustancia |
 | WhatsApp, correo y dirección | DOCX + Sonarworks | Contacto directo | Canales reales disponibles |
 | Imagen ilustrativa de CCTV | Área de videovigilancia del DOCX | Contexto visual | No hay fotos propias entregadas |
-| Sin logos de clientes | Falta de archivos/autorización | Veracidad | Mantener pendiente previo a publicación |
+| Logos de once clientes | DOCX + lista autorizada expresamente por el usuario | Experiencia real indicada | Añadir únicamente las empresas solicitadas, con fuentes de logos documentadas |
 
 ## Validación visual
 Comparar implementación renderizada con esta dirección en escritorio y móvil. Las referencias proporcionan guía semántica, no un diseño que se clone pixel a pixel.
@@ -30,4 +30,33 @@ Comparar implementación renderizada con esta dirección en escritorio y móvil.
 ## Ajustes de contenido por SEO
 
 El 13 de octubre se ajustaron los titulares y el texto inicial para nombrar seguridad electrónica, SOLUVA y El Salvador. Fuente: servicios y ubicación del DOCX, petición directa del usuario y principio de claridad de la guía de copywriting de Refero. Se conserva la dirección visual, la retícula y los colores. La nueva comprobación visual automática quedó bloqueada por la política del navegador; la validación del SEO se hizo sobre HTML compilado.
+
+## Microinteracciones y React
+
+Petición directa del usuario: añadir microinteracciones y animaciones tomando Design Spells y UIArc como referencias. Se revisaron de nuevo los estilos completos de NEVERHACK y Clutch Security en Refero. NEVERHACK sigue siendo la referencia dominante; de Clutch se toma únicamente la respuesta discreta de los enlaces. Se conserva el sistema existente, sin cambiar paleta ni estructura.
+
+| Decisión | Fuente | Adaptación para SOLUVA |
+|---|---|---|
+| Titular con entrada por palabras | UIArc Text Reveal, componente gratuito MIT | Componente React renderizado como HTML estático; CSS local, un solo H1 y texto accesible completo |
+| Flechas y menú responden a la acción | Design Spells, Sidebar icon animation in Granola | Movimiento pequeño, disparado por hover, foco o apertura del menú; sin bucles |
+| Servicios expandibles con transición | Design Spells, Smooth sheet transitions in Sudoku a Day + MDN details-content | Mantener details/summary nativos y mejora progresiva en navegadores compatibles |
+| Secciones entran una sola vez | Guía motion.md de Refero | Desplazamiento de 12 px y 400 ms; sin ocultar contenido antes de ejecutar JavaScript |
+| Movimiento reducido y navegación sin scripts | Guía de Refero + accesibilidad de UIArc | Contenido visible, sin transformaciones ni animaciones cuando el dispositivo lo solicita |
+
+Fuentes: https://designspells.com/spells/sidebar-icon-animation-in-granola, https://designspells.com/, https://uiarc.dev/components/text-reveal, https://uiarc.dev/r/text-reveal.json y https://uiarc.dev/license. Text Reveal se instala manualmente desde su registro público; no se usan componentes Pro. Sus tiempos y colores se adaptan a SOLUVA. La implementación SSR evita enviar un runtime React al navegador para este titular.
+
+## Clientes y fila de logos
+
+El usuario autorizó incorporar los once clientes de su lista y sus logos, animar la fila de marcas tecnológicas y obtener los archivos PNG. Confirmó que Óptima es la financiera y Alpha Constructores corresponde a ALPHA Construyendo historias, de alphainmobiliaria.com.sv.
+
+Refero consultado: estilos completos de NEVERHACK (dirección dominante) y Handhold (da999138-8b32-4c82-8df7-f6d239c01f2f); pantalla completa e imagen de Dub Customers (1e5e79dc-3835-4c40-86cb-3dadc25d898f). De Handhold se toma sólo la presentación discreta de logos sin marcos decorativos. De Dub se toma la jerarquía de un encabezado de clientes seguido por logos. No se toman sus testimonios, cifras ni casos de estudio.
+
+| Decisión | Fuente | Adaptación |
+|---|---|---|
+| Retícula de clientes con nombres | Lista autorizada del usuario + Dub Customers | Once empresas, sin testimonios ni afirmaciones sobre proyectos específicos |
+| Logos de peso visual uniforme | Handhold + imagen aportada por el usuario | Fondo blanco, separación fina y versiones monocromas mediante CSS; PNG originales preservan sus colores |
+| Fila tecnológica continua | Petición directa del usuario | Bucle lento y estable, con botón de pausa, pausa por cursor y foco, y alternativa de desplazamiento manual |
+| Movimiento reducido y ausencia de scripts | Refero motion.md | Fila estática desplazable; clon decorativo oculto y sin anuncios duplicados |
+
+Se conserva Archivo, los titulares negros, el rojo de SOLUVA en controles y las esquinas pequeñas. PNG derivados por conversión de formato, sin recrear marcas con IA. Procedencia en LOGOS.md.
 

@@ -3,7 +3,9 @@ import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import Icon from '../components/Icon.astro';
-import { company, services, sectors, brands, process, values, whatsappUrl, mapUrl } from '../data/company';
+import LogoMarquee from '../components/LogoMarquee.astro';
+import { TextReveal } from '../components/arc/text-reveal/text-reveal';
+import { company, services, sectors, brands, clients, process, values, whatsappUrl, mapUrl } from '../data/company';
 ---
 <Layout>
   <Header />
@@ -11,7 +13,7 @@ import { company, services, sectors, brands, process, values, whatsappUrl, mapUr
     <section class="hero container" id="inicio" aria-labelledby="hero-heading">
       <div class="hero-copy">
         <p class="eyebrow"><span class="red-dot"></span> SEGURIDAD ELECTRÓNICA · EL SALVADOR</p>
-        <h1 id="hero-heading">Seguridad electrónica.<br />Tecnología que conecta.</h1>
+        <TextReveal as="h1" id="hero-heading" text={'Seguridad electrónica.\nTecnología que conecta.'} />
         <p class="hero-description">En SOLUVA integramos videovigilancia, control de acceso, protección contra incendios y redes para empresas y residencias en El Salvador.</p>
         <div class="hero-actions">
           <a class="button" href={whatsappUrl} target="_blank" rel="noopener noreferrer">Solicitar cotización <Icon name="arrow" size={18} /></a>
@@ -36,7 +38,7 @@ import { company, services, sectors, brands, process, values, whatsappUrl, mapUr
     </div>
 
     <section class="section container solutions" id="servicios" aria-labelledby="services-heading">
-      <div class="section-intro">
+      <div class="section-intro" data-reveal>
         <div>
           <p class="eyebrow">01 / NUESTRAS SOLUCIONES</p>
           <h2 id="services-heading">Seguridad y tecnología.<br />Todas sus soluciones.</h2>
@@ -64,14 +66,14 @@ import { company, services, sectors, brands, process, values, whatsappUrl, mapUr
 
     <section class="about section" id="nosotros" aria-labelledby="about-heading">
       <div class="container about-grid">
-        <div class="about-left">
+        <div class="about-left" data-reveal>
           <p class="eyebrow">02 / SOBRE SOLUVA</p>
           <h2 id="about-heading">SOLUVA en El Salvador.<br />Atención cercana.</h2>
           <p class="about-lead">{company.about}</p>
           <p>Creemos en relaciones comerciales duraderas, construidas sobre el respeto, la responsabilidad y el cumplimiento de los compromisos adquiridos.</p>
           <div class="about-stamp"><span>2015</span><p>Año de fundación<br />San Salvador, El Salvador</p></div>
         </div>
-        <div class="about-right">
+        <div class="about-right" data-reveal data-reveal-delay="60">
           <details class="purpose" open>
             <summary>Nuestra misión <span aria-hidden="true">+</span></summary>
             <p>{company.mission}</p>
@@ -88,7 +90,7 @@ import { company, services, sectors, brands, process, values, whatsappUrl, mapUr
 
     <section class="experience section" id="experiencia" aria-labelledby="experience-heading">
       <div class="container">
-        <div class="section-intro">
+        <div class="section-intro" data-reveal>
           <div>
             <p class="eyebrow">03 / EXPERIENCIA & ACOMPAÑAMIENTO</p>
             <h2 id="experience-heading">A su lado, en cada<br />etapa del proyecto.</h2>
@@ -96,30 +98,46 @@ import { company, services, sectors, brands, process, values, whatsappUrl, mapUr
           <p>Desde 2015 desarrollamos soluciones para empresas, instituciones y residencias. Combinamos experiencia técnica con atención personalizada.</p>
         </div>
         <ol class="process-list">{process.map((step, index) => (
-          <li><span class="step-number">0{index + 1}</span><h3>{step.name}</h3><p>{step.description}</p></li>
+          <li data-reveal data-reveal-delay={index * 45}><span class="step-number">0{index + 1}</span><h3>{step.name}</h3><p>{step.description}</p></li>
         ))}</ol>
         <div class="experience-note"><Icon name="check" size={20} /><p>Experiencia en proyectos que integran videovigilancia, control de acceso, redes, comunicaciones y protección contra incendios.</p></div>
       </div>
     </section>
 
+    <section class="clients section container" id="clientes" aria-labelledby="clients-heading">
+      <div class="section-intro" data-reveal>
+        <div>
+          <p class="eyebrow">CLIENTES DE SOLUVA</p>
+          <h2 id="clients-heading">Empresas que han trabajado<br />con nosotros.</h2>
+        </div>
+        <p>Nos han confiado sus necesidades de seguridad y tecnología. Cada proyecto es una oportunidad para construir relaciones duraderas.</p>
+      </div>
+      <div class="client-grid">
+        {clients.map((client) => <figure class="client-cell" aria-label={client.name}>
+          <div class="client-logo-box"><img class:list={{ 'logo-image--light': client.light }} src={client.logo} width={client.width} height={client.height} alt="" loading="lazy" decoding="async" /></div>
+          <figcaption aria-hidden="true">{client.name}</figcaption>
+        </figure>)}
+      </div>
+    </section>
+
     <section class="brands section container" aria-labelledby="brands-heading">
-      <div class="brands-heading">
+      <div class="brands-heading" data-reveal>
         <p class="eyebrow">TECNOLOGÍA PARA CADA PROYECTO</p>
         <h2 id="brands-heading">Equipos de marcas reconocidas.</h2>
         <p>Integramos soluciones de acuerdo con los requerimientos técnicos de cada proyecto.</p>
       </div>
-      <ul class="brand-list" aria-label="Marcas de equipos que integramos">{brands.map((brand) => <li>{brand}</li>)}</ul>
+      <LogoMarquee items={brands} />
     </section>
 
     <section class="contact section" id="contacto" aria-labelledby="contact-heading">
       <div class="container contact-grid">
-        <div>
+        <div data-reveal>
           <p class="eyebrow">04 / CONVERSEMOS</p>
           <h2 id="contact-heading">Conversemos sobre<br />su próximo proyecto.</h2>
           <p class="contact-lead">Le ayudamos a identificar la solución adecuada para las necesidades de seguridad y tecnología de su empresa.</p>
           <a class="button" href={whatsappUrl} target="_blank" rel="noopener noreferrer"><Icon name="chat" size={20} /> Escribir por WhatsApp <Icon name="arrow" size={18} /></a>
         </div>
-        <dl class="contact-details">
+        <dl class="contact-details" data-reveal data-reveal-delay="60">
           <div><dt><Icon name="phone" size={20} /> WhatsApp</dt><dd><a href={whatsappUrl} target="_blank" rel="noopener noreferrer">{company.phone} <Icon name="arrow" size={16} /></a></dd></div>
           <div><dt><Icon name="mail" size={20} /> Correo electrónico</dt><dd><a href={'mailto:' + company.email}>{company.email} <Icon name="arrow" size={16} /></a></dd></div>
           <div><dt><Icon name="pin" size={20} /> Visítenos</dt><dd><a href={mapUrl} target="_blank" rel="noopener noreferrer">{company.address} <Icon name="arrow" size={16} /></a></dd></div>
@@ -129,5 +147,9 @@ import { company, services, sectors, brands, process, values, whatsappUrl, mapUr
     </section>
   </main>
   <Footer />
+  <script>
+    import { initReveals } from '../lib/motion.mjs';
+    initReveals();
+  </script>
 </Layout>
 
