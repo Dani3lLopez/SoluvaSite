@@ -60,3 +60,7 @@ Refero consultado: estilos completos de NEVERHACK (dirección dominante) y Handh
 
 Se conserva Archivo, los titulares negros, el rojo de SOLUVA en controles y las esquinas pequeñas. PNG derivados por conversión de formato, sin recrear marcas con IA. Procedencia en LOGOS.md.
 
+## Color de logos al pasar el cursor
+
+Petición directa del usuario: todos los logos de clientes y equipos recuperan sus colores originales al pasar el cursor y vuelven a gris al retirarlo. Se revisaron de nuevo NEVERHACK y Handhold; se mantiene el lienzo, la retícula y la presentación discreta. La guía motion.md de Refero aporta la transición breve y las propiedades explícitas; se reutiliza el token de 160 ms y se respeta movimiento reducido. El color se limita al logo bajo el cursor, incluso en el clon de la fila. Óptima y Ternova conservan sus archivos originales con letras blancas: una superficie oscura aparece detrás de esos dos logos durante hover para mantenerlos legibles. No se añaden enlaces ni controles a las imágenes.
+

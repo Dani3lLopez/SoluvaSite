@@ -42,3 +42,7 @@ El 13 de octubre se añadieron once clientes autorizados y once marcas de equipo
 
 El 13 de octubre de 2026, tras la autorización del usuario para subir los cambios, se repitieron npm run check (20 archivos, sin errores, advertencias ni sugerencias), npm run build y npm test (16 pruebas aprobadas). Se confirmó el repositorio Dani3lLopez/SoluvaSite y la rama main, sin cambios remotos pendientes de integrar antes del commit. Se incluyen microinteracciones, el componente React, clientes, 22 logos PNG, fuentes y documentación. La revisión visual del conjunto continúa pendiente por el bloqueo anterior del navegador. La subida a GitHub no despliega el sitio; el dominio sigue por definir y se conserva noindex.
 
+## Color original durante hover
+
+El 13 de octubre se añadió una transición CSS de 160 ms para recuperar los colores de clientes y equipos al pasar el cursor, con regreso a gris al retirarlo. Se aplica también al clon de la fila y conserva la preferencia de movimiento reducido. Óptima y Ternova usan una superficie oscura sólo durante hover para conservar sus letras blancas. npm run check: 20 archivos sin errores, advertencias ni sugerencias; compilación correcta y 16 pruebas existentes aprobadas. El servidor local entrega el CSS actualizado con HTTP 200. El hover no se comprobó visualmente en navegador por el bloqueo anterior; no se añadieron pruebas que reproduzcan reglas CSS. El usuario autorizó subir este ajuste a GitHub; el despliegue del sitio sigue pendiente.
+
