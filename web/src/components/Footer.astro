@@ -1,0 +1,25 @@
+---
+import { company, navigation, whatsappUrl } from '../data/company';
+---
+<footer class="site-footer">
+  <div class="container footer-top">
+    <div class="footer-brand">
+      <img src="/brand/logo-soluva.webp" width="120" height="120" alt="SOLUVA S.A. de C.V." loading="lazy" />
+      <p>Seguridad electrónica e<br />infraestructura tecnológica.</p>
+    </div>
+    <nav aria-label="Navegación del pie de página">
+      {navigation.map((item) => <a href={item.href}>{item.label}</a>)}
+    </nav>
+    <div class="footer-contact">
+      <span>CONVERSEMOS</span>
+      <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">{company.phone}</a>
+      <a href={'mailto:' + company.email}>{company.email}</a>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>© {new Date().getFullYear()} {company.name}</p>
+    <p>San Salvador, El Salvador</p>
+    <a href="#inicio">Volver arriba ↑</a>
+  </div>
+</footer>
+

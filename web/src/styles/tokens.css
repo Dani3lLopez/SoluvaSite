@@ -1,0 +1,13 @@
+:root {
+  --white: #ffffff;
+  --ink: #202020;
+  --muted: #5c5c5c;
+  --red: #e00020;
+  --red-hover: #b9001a;
+  --surface: #f5f5f5;
+  --line: #e4e4e4;
+  --font: 'Archivo Variable', Arial, sans-serif;
+  --radius: 4px;
+  --max-width: 1240px;
+}
+

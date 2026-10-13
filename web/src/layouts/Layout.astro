@@ -1,0 +1,52 @@
+---
+import '@fontsource-variable/archivo';
+import '../styles/global.css';
+import { seo, structuredData } from '../lib/seo';
+interface Props { title?: string; }
+const { title = seo.title } = Astro.props;
+const canonical = Astro.site ? new URL(Astro.url.pathname, Astro.site).href : undefined;
+const socialImage = Astro.site ? new URL(seo.image, Astro.site).href : undefined;
+const canIndex = !import.meta.env.DEV && Boolean(Astro.site);
+const schema = JSON.stringify(structuredData(Astro.site)).replace(/</g, '\\u003c');
+---
+<!doctype html>
+<html lang="es-SV">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={seo.description} />
+    <meta name="robots" content={canIndex ? 'index, follow, max-image-preview:large' : 'noindex, follow'} />
+    {canonical && <link rel="canonical" href={canonical} />}
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" href="/favicon-32.png" sizes="32x32" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={seo.description} />
+    <meta property="og:site_name" content="SOLUVA" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_SV" />
+    {canonical && <meta property="og:url" content={canonical} />}
+    {socialImage && (
+      <>
+        <meta property="og:image" content={socialImage} />
+        <meta property="og:image:width" content="1254" />
+        <meta property="og:image:height" content="1254" />
+        <meta property="og:image:alt" content="Logo de SOLUVA S.A. de C.V." />
+        <meta property="og:image:type" content="image/png" />
+      </>
+    )}
+    <meta name="twitter:card" content={socialImage ? 'summary_large_image' : 'summary'} />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={seo.description} />
+    {socialImage && <meta name="twitter:image" content={socialImage} />}
+    {socialImage && <meta name="twitter:image:alt" content="Logo de SOLUVA S.A. de C.V." />}
+    <script type="application/ld+json" set:html={schema} />
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <slot />
+  </body>
+</html>
+
