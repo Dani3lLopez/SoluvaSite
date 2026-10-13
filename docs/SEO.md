@@ -1,6 +1,6 @@
 # SEO de SOLUVA
 
-Fecha: 13 de octubre de 2026. Estado: implementación local preparada; dominio por definir según respuesta del usuario. La web todavía no se ha publicado ni registrado en Google.
+Fecha: 13 de octubre de 2026. Estado: dominio definitivo por definir según respuesta del usuario. El alojamiento actual https://soluvasite.vercel.app/ está accesible; el registro e indexación en Google no se han verificado.
 
 ## Resultado
 
@@ -8,7 +8,7 @@ Se mejoraron el título y la descripción para identificar a SOLUVA, sus servici
 
 Se añadió un bloque JSON-LD con LocalBusiness, WebSite y WebPage. Usa nombre legal, año de fundación, dirección, teléfono, correo y catálogo de servicios del documento. No incluye reseñas, calificaciones, coordenadas, certificaciones ni horarios semanales sin confirmar.
 
-Se prepararon canonical, robots.txt, sitemap.xml, Open Graph y tarjetas sociales. Todas las direcciones públicas provienen de una única configuración SITE_URL. La imagen compartida es el logo real restaurado, no la fotografía ilustrativa de un supuesto proyecto.
+Se prepararon canonical, robots.txt, sitemap.xml, Open Graph y tarjetas sociales. SITE_URL controla las direcciones del dominio oficial. Mientras éste esté pendiente, Open Graph y Twitter usan el alojamiento actual verificado https://soluvasite.vercel.app/ para publicar las direcciones absolutas de la página y del logo HD de 1254×1254. Esto evita omitir la imagen de compartir; no activa canonical ni indexación. Al configurar SITE_URL, las direcciones sociales también usan ese dominio. La imagen compartida es el logo real restaurado, no la fotografía ilustrativa de un supuesto proyecto.
 
 La página conserva salida estática, fotografía WebP de unos 127 KB, imágenes con dimensiones declaradas, carga diferida del logo inferior y tipografía local con font-display: swap.
 
@@ -59,4 +59,5 @@ La primera posición no está garantizada por estos cambios. Google debe descubr
 - Robots y noindex: https://developers.google.com/search/docs/crawling-indexing/robots-meta-tag
 - Información del negocio: https://developers.google.com/search/docs/appearance/establish-business-details
 - Configuración de Astro: https://docs.astro.build/en/guides/configuring-astro/
+- Imagen, URL, dimensiones y tipo para compartir: https://ogp.me/
 

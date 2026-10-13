@@ -10,5 +10,5 @@ La primera versión se prepara para revisión local. El documento adjunto es la 
 - Confirmar alcance de certificaciones Hikvision HCSA y quién es su titular antes de destacarlas como credencial empresarial.
 - Definir dominio, alojamiento y, sólo si se solicita un formulario, recepción de mensajes y aviso de privacidad correspondiente.
 - SEO: el usuario confirmó que el dominio está por definir. Configurar SITE_URL y recompilar antes de publicar; después verificar Search Console, sitemap, indexación y Perfil de Empresa de Google. Procedimiento en SEO.md.
-- El usuario autorizó subir el proyecto a https://github.com/Dani3lLopez/SoluvaSite. El despliegue del sitio continúa pendiente de dominio, alojamiento y solicitud de publicación.
+- El usuario autorizó subir el proyecto a https://github.com/Dani3lLopez/SoluvaSite. Se verificó el alojamiento actual https://soluvasite.vercel.app/, vinculado a main de ese repositorio. El dominio definitivo y su configuración de indexación continúan pendientes.
 

@@ -48,6 +48,22 @@ test('El contenido principal y los metadatos describen los servicios y el país'
   assert.match(html, /property="og:site_name" content="SOLUVA"/);
 });
 
+test('Compartir usa el logo HD aunque el dominio definitivo esté pendiente', () => {
+  const origin = site || 'https://soluvasite.vercel.app/';
+  const imageUrl = html.match(/property="og:image" content="([^"]+)"/)?.[1];
+  assert.equal(imageUrl, new URL('brand/logo-soluva-social.png', origin).href);
+  assert.ok(html.includes('property="og:url" content="' + origin + '"'));
+  assert.ok(html.includes('name="twitter:image" content="' + imageUrl + '"'));
+  assert.match(html, /name="twitter:card" content="summary_large_image"/);
+  const image = readFileSync(join(buildRoot, new URL(imageUrl).pathname));
+  assert.deepEqual(image.subarray(0, 8), Buffer.from([137, 80, 78, 71, 13, 10, 26, 10]));
+  assert.equal(image.readUInt32BE(16), 1254);
+  assert.equal(image.readUInt32BE(20), 1254);
+  assert.match(html, /property="og:image:width" content="1254"/);
+  assert.match(html, /property="og:image:height" content="1254"/);
+  assert.match(html, /property="og:image:type" content="image\/png"/);
+});
+
 test('Los datos estructurados son válidos y no inventan horarios ni reseñas', () => {
   const scripts = [...html.matchAll(/<script[^>]*type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/g)];
   assert.equal(scripts.length, 1);
