@@ -10,6 +10,7 @@ export const company = {
   region: 'San Salvador',
   hours: '8:00 a. m. a 5:00 p. m.',
   description: 'Seguridad electrónica, tecnología e infraestructura para proteger y conectar su empresa.',
+  introduction: 'Empresa especializada en soluciones integrales de seguridad electrónica para clientes corporativos, industriales y residenciales. Desarrollamos proyectos de videovigilancia, control de acceso, sistemas contra incendio, barreras vehiculares y mantenimiento.',
   about: 'Somos una empresa salvadoreña fundada en 2015, especializada en el suministro, instalación, configuración y mantenimiento de sistemas de seguridad electrónica e infraestructura tecnológica.',
   mission: 'Brindar soluciones integrales de seguridad electrónica e infraestructura tecnológica que contribuyan a proteger a las personas, los bienes y la continuidad operativa de nuestros clientes, mediante un servicio técnico responsable, atención personalizada y compromiso con la calidad.',
   vision: 'Ser una empresa referente en El Salvador en la integración de soluciones de seguridad y tecnología, reconocida por la calidad de sus proyectos, la confianza de sus clientes y el desarrollo continuo de su equipo.',
@@ -34,6 +35,7 @@ export const services = [
   { id: 'telefonia', icon: 'phone', name: 'Telefonía y comunicación', description: 'Telefonía IP, plantas telefónicas y sistemas de comunicación empresarial.', tags: ['Telefonía IP', 'Comunicación empresarial'] },
   { id: 'electricidad', icon: 'bolt', name: 'Electricidad y canalización', description: 'Instalaciones eléctricas de alta y baja tensión y canalizaciones para infraestructura tecnológica y sistemas de seguridad.', tags: ['Alta y baja tensión', 'Canalización'] },
   { id: 'soporte', icon: 'tool', name: 'Mantenimiento y soporte técnico', description: 'Servicios preventivos y correctivos, diagnóstico de fallas, configuración y puesta en marcha de equipos y sistemas.', tags: ['Preventivo y correctivo', 'Diagnóstico técnico'] },
+  { id: 'ingenieria', icon: 'ruler', name: 'Servicio de ingeniería', description: 'Planificación y diseño técnico de soluciones de seguridad electrónica e infraestructura tecnológica según los requerimientos de cada proyecto.', tags: ['Planificación de proyectos', 'Diseño técnico'] },
 ];
 
 export const sectors = ['Comercial', 'Corporativo', 'Residencial', 'Industrial', 'Institucional'];

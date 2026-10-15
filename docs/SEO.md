@@ -4,7 +4,7 @@ Fecha: 13 de octubre de 2026. Estado: dominio definitivo por definir según resp
 
 ## Resultado
 
-Se mejoraron el título y la descripción para identificar a SOLUVA, sus servicios y El Salvador. El encabezado principal ahora describe seguridad electrónica y el texto inicial enumera servicios reales. Se mantiene un único H1 y los siete servicios siguen presentes en el HTML generado, aunque el usuario los despliegue para leerlos.
+Se mejoraron el título y la descripción para identificar a SOLUVA, sus servicios y El Salvador. El encabezado principal ahora describe seguridad electrónica y el texto inicial enumera servicios reales. Se mantiene un único H1 y los ocho servicios siguen presentes en el HTML generado, aunque el usuario los despliegue para leerlos. El 15 de octubre de 2026 se añadió Servicio de ingeniería al contenido y al catálogo de datos estructurados.
 
 Se añadió un bloque JSON-LD con LocalBusiness, WebSite y WebPage. Usa nombre legal, año de fundación, dirección, teléfono, correo y catálogo de servicios del documento. No incluye reseñas, calificaciones, coordenadas, certificaciones ni horarios semanales sin confirmar.
 

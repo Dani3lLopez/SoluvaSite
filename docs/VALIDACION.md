@@ -52,3 +52,13 @@ El 13 de octubre se comprobó que https://soluvasite.vercel.app/ respondía HTTP
 
 La prueba de regresión falló por ausencia de og:image antes del cambio. npm run check: 20 archivos sin errores, advertencias ni sugerencias. Compilación correcta y 17 pruebas aprobadas tanto sin dominio como con un dominio reservado de ensayo en web/work/share-domain-check/. Se verifican URLs absolutas, PNG HD y dimensiones declaradas, tarjeta de Twitter y prioridad del dominio configurado. Vercel confirmó el alojamiento existente en production, estado READY y vinculado a main del repositorio autorizado Dani3lLopez/SoluvaSite. La miniatura real dentro de la aplicación de mensajería y su caché no se comprobaron automáticamente; no se envió ningún mensaje.
 
+## Texto de la captura y servicio de ingeniería
+
+El 15 de octubre de 2026 se sustituyó el párrafo inicial por la transcripción de la imagen del usuario, centralizada en company.introduction. Se añadió Servicio de ingeniería con planificación y diseño técnico, etiquetas y el enlace de consulta existente. La página y el catálogo JSON-LD incluyen ahora ocho servicios; se actualizaron las dos comprobaciones que esperaban siete.
+
+npm run check: 20 archivos, sin errores, advertencias ni sugerencias. npm run build correcto y 17 pruebas aprobadas. Se verificaron además el HTTP 200 local, el párrafo completo, la retirada del anterior, el apartado de ingeniería con descripción y WhatsApp, y su presencia en los datos estructurados, tanto en desarrollo como en el HTML compilado. La primera revisión de tipos detectó sugerencias dentro de una compilación temporal anterior; se conservó ese directorio fuera de web/ y la revisión de código quedó limpia. No se repitió la inspección visual en navegador por el bloqueo anterior de su política de seguridad. Cambios locales, sin commit, push ni despliegue en esta actualización.
+
+## Icono de ingeniería y preparación para GitHub
+
+El 15 de octubre de 2026 el usuario solicitó cambiar el icono de ingeniería y subir los cambios a GitHub. Se añadió una escuadra SVG al componente Icon y se asignó únicamente a ingeniería; mantenimiento conserva la llave. Se incluyen el párrafo de la captura, el octavo servicio y sus datos estructurados de la actualización anterior. npm run check: 20 archivos sin errores, advertencias ni sugerencias; compilación estática correcta y 17 pruebas aprobadas. El HTML servido con HTTP 200 y el compilado contienen los trazados de la escuadra, su tamaño y atributos accesibles, conservan el icono de mantenimiento y el texto solicitado. Se confirmó origin como Dani3lLopez/SoluvaSite, rama main y paridad remota antes del commit. No se repitió la revisión visual en navegador ni se verificó el despliegue en Vercel en esta etapa.
+

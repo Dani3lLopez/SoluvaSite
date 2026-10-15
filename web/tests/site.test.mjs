@@ -26,7 +26,7 @@ test('Los contactos coinciden con la fuente y no hay envío simulado', () => {
   assert.doesNotMatch(html, /<form\b/i);
   assert.equal((html.match(/<h1\b/g) ?? []).length, 1);
   assert.match(html, /<html lang="es-SV"/);
-  assert.equal((html.match(/class="service"/g) ?? []).length, 7);
+  assert.equal((html.match(/class="service"/g) ?? []).length, 8);
 });
 
 test('El favicon contiene las resoluciones de pestaña y un recurso ICO real', () => {
@@ -75,7 +75,7 @@ test('Los datos estructurados son válidos y no inventan horarios ni reseñas', 
   assert.equal(business.email, 'info@gruposoluva.com');
   assert.equal(business.address.addressLocality, 'San Salvador');
   assert.equal(business.address.addressCountry, 'SV');
-  assert.equal(business.hasOfferCatalog.itemListElement.length, 7);
+  assert.equal(business.hasOfferCatalog.itemListElement.length, 8);
   for (const unsupported of ['aggregateRating', 'review', 'openingHours', 'openingHoursSpecification', 'geo', 'sameAs']) {
     assert.equal(business[unsupported], undefined);
   }

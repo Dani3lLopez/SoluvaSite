@@ -64,3 +64,9 @@ Se conserva Archivo, los titulares negros, el rojo de SOLUVA en controles y las 
 
 Petición directa del usuario: todos los logos de clientes y equipos recuperan sus colores originales al pasar el cursor y vuelven a gris al retirarlo. Se revisaron de nuevo NEVERHACK y Handhold; se mantiene el lienzo, la retícula y la presentación discreta. La guía motion.md de Refero aporta la transición breve y las propiedades explícitas; se reutiliza el token de 160 ms y se respeta movimiento reducido. El color se limita al logo bajo el cursor, incluso en el clon de la fila. Óptima y Ternova conservan sus archivos originales con letras blancas: una superficie oscura aparece detrás de esos dos logos durante hover para mantenerlos legibles. No se añaden enlaces ni controles a las imágenes.
 
+## Texto inicial e ingeniería — 15 de octubre de 2026
+
+Fuente de contenido y referencia fijada: captura proporcionada por el usuario en esta conversación. Se transcribe su párrafo en el hero y se añade «Servicio de ingeniería» a la lista técnica existente, conservando la jerarquía de NEVERHACK y las filas separadas por líneas de Factory. La descripción del nuevo servicio se limita a planificación y diseño técnico, actividades ya descritas en el proceso de SOLUVA. Se reutilizan tipografía, espaciado, icono de herramientas y acordeón; no se introduce otra dirección visual.
+
+El usuario pidió después cambiar el icono de ingeniería: se sustituye la llave compartida con mantenimiento por una escuadra de dibujo técnico. La guía icons.md de Refero y el componente Icon existente fijan el lienzo de 24×24, trazo de 1,6 px, extremos redondos, currentColor y SVG decorativo oculto a lectores de pantalla; no se añade una biblioteca ni una imagen raster.
+
