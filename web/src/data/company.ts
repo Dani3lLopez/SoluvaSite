@@ -11,6 +11,7 @@ export const company = {
   hours: '8:00 a. m. a 5:00 p. m.',
   description: 'Seguridad electrónica, tecnología e infraestructura para proteger y conectar su empresa.',
   introduction: 'Empresa especializada en soluciones integrales de seguridad electrónica para clientes corporativos, industriales y residenciales. Desarrollamos proyectos de videovigilancia, control de acceso, sistemas contra incendio, barreras vehiculares y mantenimiento.',
+  projectApproach: 'Desarrollamos soluciones integrales para clientes corporativos, industriales y residenciales. Combinamos experiencia técnica con atención personalizada.',
   about: 'Somos una empresa salvadoreña fundada en 2015, especializada en el suministro, instalación, configuración y mantenimiento de sistemas de seguridad electrónica e infraestructura tecnológica.',
   mission: 'Brindar soluciones integrales de seguridad electrónica e infraestructura tecnológica que contribuyan a proteger a las personas, los bienes y la continuidad operativa de nuestros clientes, mediante un servicio técnico responsable, atención personalizada y compromiso con la calidad.',
   vision: 'Ser una empresa referente en El Salvador en la integración de soluciones de seguridad y tecnología, reconocida por la calidad de sus proyectos, la confianza de sus clientes y el desarrollo continuo de su equipo.',

@@ -5,7 +5,7 @@ La primera versión se prepara para revisión local. El documento adjunto es la 
 - Confirmar los días de atención. La fuente sólo indica de 8:00 a. m. a 5:00 p. m.; no se agregan días.
 - Confirmar que WhatsApp +503 7469-2411, info@gruposoluva.com y dirección siguen vigentes.
 - Resuelto para la revisión local: el usuario autorizó mencionar las once empresas de su lista y añadir sus logos. Confirmó Óptima financiera y ALPHA Construyendo historias. Procedencia de los PNG en LOGOS.md; no se añaden testimonios ni proyectos específicos.
-- Recibir fotografías reales y autorizadas de proyectos, equipo y servicios. El hero actual es ilustrativo y generado.
+- Recibir fotografías reales y autorizadas de proyectos, equipo y servicios. El hero actual usa dos fotos ilustrativas de catálogo de Magnific; no representan instalaciones de SOLUVA.
 - Validar la forma oficial del nombre legal y la versión restaurada del logo. Se conserva el original.
 - Confirmar alcance de certificaciones Hikvision HCSA y quién es su titular antes de destacarlas como credencial empresarial.
 - Definir dominio, alojamiento y, sólo si se solicita un formulario, recepción de mensajes y aviso de privacidad correspondiente.

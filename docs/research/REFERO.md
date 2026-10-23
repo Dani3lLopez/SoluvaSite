@@ -70,3 +70,7 @@ Fuente de contenido y referencia fijada: captura proporcionada por el usuario en
 
 El usuario pidió después cambiar el icono de ingeniería: se sustituye la llave compartida con mantenimiento por una escuadra de dibujo técnico. La guía icons.md de Refero y el componente Icon existente fijan el lienzo de 24×24, trazo de 1,6 px, extremos redondos, currentColor y SVG decorativo oculto a lectores de pantalla; no se añade una biblioteca ni una imagen raster.
 
+## Texto y hero de seguridad integral — 23 de octubre de 2026
+
+Referencia de contenido: petición directa del usuario de sustituir «Desde 2015» y mostrar cámaras, alarma y barreras vehiculares. Se actualizan las dos menciones que empezaban con esa frase; el año legal de fundación permanece en Nosotros. Referencia visual: sistema existente de NEVERHACK, lienzo claro, Archivo y rojo limitado a acciones. El hero mantiene su posición y dimensiones, con dos fotografías de Magnific en filas: equipos de cámara/alarma/sensores sobre fondo claro y una barrera vehicular en contexto. Separación de 4 px y leyenda única; no se inventa una escena ni un proyecto de SOLUVA. Imágenes de catálogo, originales descargados con stock_download y derivados WebP locales. Se investigaron seis búsquedas y seis candidatos con enlaces individuales; procedencia en IMAGENES.md.
+
