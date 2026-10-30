@@ -72,3 +72,21 @@ npm run check: 20 archivos, 0 errores, advertencias o sugerencias. Compilación 
 
 El 23 de octubre de 2026 el usuario autorizó subir esta actualización. Se revisó el diff del mismo código validado arriba, los cuatro archivos de imagen y la documentación de procedencia; no hubo cambios adicionales de implementación que requirieran repetir las 17 pruebas. Se confirmó origin en Dani3lLopez/SoluvaSite, rama main y paridad 0/0 con origin/main tras actualizar la referencia remota. Se incluyen las fotografías originales, sus versiones WebP y las modificaciones de texto y composición del hero. La revisión visual en navegador y el despliegue en Vercel no se comprobaron en esta etapa.
 
+## Prueba local de la fotografía seleccionada
+
+El 30 de octubre de 2026 el usuario eligió el recurso de Magnific 419388402 y pidió levantar desarrollo para verlo en el hero. Se descargó y revisó el original de 5451×3634; se integró una versión WebP de 1600×1067 como única fotografía del hero. Se retiró la retícula de dos imágenes, se recuperaron las alturas adaptables de 560/515/490/370 px y se fijó el encuadre en 10% 50% para conservar el mecanismo y la caseta. Las fotografías anteriores permanecen archivadas.
+
+npm run check: 20 archivos, sin errores, advertencias ni sugerencias. Compilación correcta y 17 pruebas aprobadas. Página y fotografía local responden HTTP 200; se verificaron una sola imagen del hero, su ruta, dimensiones, alternativa descriptiva y leyenda Control de acceso tanto en desarrollo como en HTML compilado. Servidor activo en http://127.0.0.1:4321/ desde web/. Se solicitó abrir #inicio en el panel del navegador de Codex; la herramienta devolvió queued. No se repitió la revisión visual automatizada de la página por el bloqueo anterior de su política de seguridad; el encuadre queda para revisión del usuario. Sin commit, push ni despliegue.
+
+## Fondo completo y capa gris del hero
+
+El 30 de octubre de 2026 se probó primero el fondo de ancho completo con foto al 28% sobre blanco y luego, por petición del usuario, una capa gris #202020 al 62% con foto a opacidad completa. El contenido usa texto blanco y conserva botones rojos; el foco de enlaces es blanco. Se retiraron la figura lateral, su leyenda y la animación del bloque fotográfico. El fondo es decorativo y no recibe eventos de puntero.
+
+npm run check: 20 archivos sin errores, advertencias ni sugerencias. Compilación del tratamiento final correcta y 17 pruebas aprobadas. HTTP 200 de página e imagen; comprobación del hero a ancho completo, foto elegida, alternativa vacía, contenedor y enlace de cotización conservados en desarrollo y HTML compilado. Contraste mínimo teórico del blanco sobre el caso más claro de la capa gris: 4,62:1; no sustituye una revisión visual de la página ni una auditoría de accesibilidad. No se repitió la inspección visual automatizada por el bloqueo anterior del navegador. Prueba disponible en el servidor local existente, sin commit, push ni despliegue.
+
+## Regreso a la versión clara y preparación para GitHub
+
+El 30 de octubre de 2026 el usuario pidió volver a la capa clara y autorizó subir los cambios al terminar. Estado elegido: fondo blanco, fotografía decorativa al 28%, texto oscuro y controles rojos; se retiraron la superposición gris y el foco blanco específico del hero. Se incluyen la fotografía seleccionada, el fondo a ancho completo y la documentación de procedencia.
+
+npm run check: 20 archivos sin errores, advertencias ni sugerencias; compilación correcta y 17 pruebas aprobadas. HTTP 200 de página e imagen, texto y enlaces conservados, opacidad y colores claros confirmados en el código fuente y ausencia de la capa gris. Se verificó origin Dani3lLopez/SoluvaSite, rama main y paridad remota antes del commit. No se repitió la inspección visual automatizada ni se comprobó el despliegue en Vercel.
+

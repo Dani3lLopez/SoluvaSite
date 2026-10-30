@@ -33,3 +33,11 @@ El usuario pidió una imagen que represente cámaras, alarmas y barreras vehicul
 
 Los seis recursos figuran como Premium. Las dos fotos utilizadas se obtuvieron con stock_download autenticado y sus enlaces de descarga originales, sin guardar vistas previas ni URLs temporales en el código. No se descargaron las otras cuatro alternativas ni se generaron imágenes nuevas. Los originales se revisaron visualmente y se conservan en marca/hero-seguridad-integral-magnific.jpg (6000×4000, 4.128.671 bytes) y marca/hero-acceso-vehicular-magnific.jpg (5040×3360, 7.448.621 bytes). Derivados de formato WebP a 1600×1067: web/public/images/seguridad-integral-magnific.webp (22.638 bytes) y web/public/images/acceso-vehicular-magnific.webp (186.168 bytes). Sólo se redimensionó y convirtió el formato; el encuadre se aplica mediante CSS. No se alteraron equipos ni se compuso una escena ficticia.
 
+## Fotografía elegida para probar el hero — 30 de octubre de 2026
+
+El usuario seleccionó expresamente https://www.magnific.com/premium-photo/automated-parking-barrier-with-lowered-arm-security-booth-effectively-managing-vehicle-access-site-security-entry-point_419388402.htm. Recurso Premium, autor aileenchik; fotografía de barrera automática cerrada y caseta, sin atribuir el lugar a SOLUVA. Se descargó el original mediante stock_download autenticado y se revisó visualmente. Original en marca/hero-acceso-seleccionado-magnific.jpg, 5451×3634, 10.341.598 bytes. Versión WebP en web/public/images/acceso-seleccionado-magnific.webp, 1600×1067, 299.576 bytes. Conversión de formato y tamaño sin generación ni alteración de contenido. Reemplaza las dos fotografías anteriores en el hero; se conservan sus archivos para referencia. El encuadre CSS usa object-position: 10% 50% para mantener el mecanismo y la caseta visibles.
+
+En la siguiente prueba del mismo día, el usuario pidió usarla de fondo completo y después añadir una capa gris más oscura. La foto se muestra a opacidad completa con superposición CSS #202020 al 62%, texto blanco y encuadre 50% 45% en escritorio / 20% 50% en móvil. El archivo no se altera; la imagen pasa a ser decorativa con alternativa vacía.
+
+Tratamiento vigente tras comparar ambas versiones: el usuario prefirió regresar a la foto al 28% sobre blanco, con texto oscuro. Se retiró la capa gris y se conservó el mismo archivo y encuadre.
+

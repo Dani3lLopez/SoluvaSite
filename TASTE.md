@@ -8,7 +8,7 @@ La identidad proviene del logo existente: blanco, negro y rojo. La página debe 
 - Sonarworks Contacts aporta filas de contacto claras con etiqueta y dato.
 - Tipografía Archivo, local: titulares compactos y texto legible. Titulares negros completos, sin colorear palabras decorativamente.
 - Botones rojos, bordes discretos, superficies planas y esquinas pequeñas. La marca conserva su rojo, con un rojo más oscuro para estados hover.
-- El hero combina fotografías ilustrativas de catálogo de Magnific: equipos de seguridad y barrera vehicular; nunca presentarlas como proyectos reales de SOLUVA. La cámara generada anterior se conserva como archivo histórico.
+- El hero usa la fotografía de Magnific elegida por el usuario como fondo a ancho completo, con opacidad del 28% sobre blanco, texto oscuro y botones rojos. Es ilustrativa; nunca presentarla como un proyecto real de SOLUVA. Las imágenes anteriores se conservan como archivo histórico.
 - Mantener información empresarial en company.ts y reservar las notas internas para docs/.
 - Evitar glassmorphism, gradientes llamativos, tarjetas repetitivas, cifras inventadas, reseñas falsas y animaciones que dificulten la lectura.
 - Movimiento autorizado: titular por palabras de UIArc, entradas únicas al recorrer secciones y respuesta breve de botones, enlaces, menú y servicios. Tomar Design Spells como referencia de respuesta al usuario. La fila tecnológica admite un bucle lento solicitado por el usuario, con pausa; las demás animaciones son únicas. Sin parallax ni cambios de paleta; desactivar movimiento al solicitarlo el dispositivo.

@@ -24,7 +24,6 @@
   .hero-description { animation: solu-enter 400ms var(--motion-ease) 100ms backwards; }
   .hero-actions { animation: solu-enter 400ms var(--motion-ease) 170ms backwards; }
   .hero-footnote { animation: solu-enter 400ms var(--motion-ease) 220ms backwards; }
-  .hero-visual { animation: solu-enter 480ms var(--motion-ease) 100ms backwards; }
   .button:active { transform: scale(.98); }
   .button:focus-visible svg:last-child, .text-link:focus-visible svg, .contact-details a:focus-visible svg { transform: translateX(3px); }
   @media (hover: hover) and (pointer: fine) {

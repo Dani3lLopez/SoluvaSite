@@ -74,3 +74,13 @@ El usuario pidió después cambiar el icono de ingeniería: se sustituye la llav
 
 Referencia de contenido: petición directa del usuario de sustituir «Desde 2015» y mostrar cámaras, alarma y barreras vehiculares. Se actualizan las dos menciones que empezaban con esa frase; el año legal de fundación permanece en Nosotros. Referencia visual: sistema existente de NEVERHACK, lienzo claro, Archivo y rojo limitado a acciones. El hero mantiene su posición y dimensiones, con dos fotografías de Magnific en filas: equipos de cámara/alarma/sensores sobre fondo claro y una barrera vehicular en contexto. Separación de 4 px y leyenda única; no se inventa una escena ni un proyecto de SOLUVA. Imágenes de catálogo, originales descargados con stock_download y derivados WebP locales. Se investigaron seis búsquedas y seis candidatos con enlaces individuales; procedencia en IMAGENES.md.
 
+## Prueba del hero seleccionado — 30 de octubre de 2026
+
+Referencia fijada por el usuario: fotografía de Magnific 419388402, barrera automática cerrada y caseta de seguridad. Sustituye la composición de dos fotos por una sola imagen, conservando retícula, tipografía, colores y alturas adaptables. Se encuadra hacia la izquierda para mantener visible el mecanismo y la caseta; leyenda Control de acceso y texto alternativo descriptivo. La foto sigue siendo ilustrativa, no un proyecto de SOLUVA. Cambio para revisión local con servidor de desarrollo, sin publicación solicitada.
+
+## Prueba de fotografía como fondo completo — 30 de octubre de 2026
+
+El usuario pidió usar la misma imagen como fondo de todo el hero con opacidad. Se probó primero una fotografía al 28% sobre blanco y, tras su petición de una capa gris más oscura, se dejó la foto a opacidad completa con superposición #202020 al 62%, texto blanco y botones rojos. El contenido permanece dentro del contenedor existente, con foco blanco para teclado y fotografía decorativa de ancho completo. La capa no afecta la opacidad de texto ni acciones. Se retira la figura lateral y su leyenda; no se añade movimiento al fondo. Prueba local, pendiente de revisión visual del usuario.
+
+Tras comparar las pruebas, el usuario pidió volver a la capa clara: se restableció la foto al 28% sobre blanco, texto oscuro, botones rojos y foco rojo del sistema. Se conserva el fondo de ancho completo y el encuadre seleccionado.
+

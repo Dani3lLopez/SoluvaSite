@@ -17,5 +17,5 @@
 
 Titular principal fluido entre 42 y 76 px. Secciones 36–54 px. Texto base 16–18 px. Controles de 44 px como mínimo. Movimiento: estados de controles de 120–160 ms, paneles de 280 ms, entradas de secciones de 400 ms y titular por palabras de hasta 550 ms más un desfase breve. Curva principal cubic-bezier(.16, 1, .3, 1). Entradas únicas, sin bucles y sin bloquear interacción; respetar movimiento reducido. Detalles en MOVIMIENTO.md.
 
-La guía adapta las referencias al brief de SOLUVA. Los colores originales de referencias secundarias no se importan a otras funciones. Dos fotografías de catálogo de Magnific ocupan el hero, con equipos de cámara/alarma y una barrera vehicular; los proyectos reales requieren material autorizado.
+La guía adapta las referencias al brief de SOLUVA. Los colores originales de referencias secundarias no se importan a otras funciones. Una fotografía de Magnific elegida por el usuario cubre el fondo del hero a ancho completo, con opacidad del 28% sobre blanco, texto oscuro y foco de teclado rojo; los proyectos reales requieren material autorizado.
 
